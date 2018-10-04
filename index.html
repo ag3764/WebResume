@@ -1,183 +1,219 @@
 <!DOCTYPE html>
-<html lang="en"
-
-
-<head>
-  <!-- the <head> element contains the metadata (data ABOUT data); it is placed
+<html lang="en" <head>
+<!-- the <head> element contains the metadata (data ABOUT data); it is placed
 between the <html> tag and the <body> tag; HTML metadata is data about the HTML
 document. Metadata is not displayed.  Metadata typically define the document title,
 character set, styles, links, scripts, and other meta information -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>AG</title>
 
-  <title>AG</title>
-  <!-- command forward slash to make comments -->
-  <!-- colors, fonts and style are all driven by CSS. HTML is content; hyptertext markup language.
-A line was drawn between structure (HTML) and presentation (CSS) -->
-  <!-- style begins here -->
-  <style type="text/css">
-    body{
-      line-height: 24px;
-      font: 16px Garamond, Sans-Serif;
-      background: url(images/bg.jpg);
+<!-- below, we are stealing a stylesheet from font awesome, copying and pasting the link  -->
+<!--  stealing from google font, go to categories section, click top right + button, click family selected
+        and copy external link that's generated, and paste it below the font awesome link, then copy
+      and paste the css font style code into the body of custom.css-->
 
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="custom.css">
 
-    }
-    /* #is used to target div with custom id*/
-    #page-wrap{
-      width:800px;
-      margin: 40px auto 60px auto; /*reserve some empty space around content*/
-    }
-    #pic{
-      float: right;
-      margin: -30px 0 0 0; /* top right bottom left */
-    }
-
-    h1{
-      color: white; /* red green blue */
-      margin: 0 0 16px 0;
-      padding: 0 0 16px 0;
-      /* font-size: 32px; */
-      font-weight: bold;
-      letter-spacing: 0px;
-      border-bottom: 1px solid #109;
-    }
-    h2{
-      /* color:white; */
-    }
-
-    a{
-
-      color: rgb(255, 209, 59);
-      border-bottom: 1px dotted;
-      text-decoration: none;
-
-    }
-    a:hover{
-      border-bottom-style: solid;
-      color: black;
-    }
-
-    ul{
-      margin: 0 0 32px 17px;
-
-    }
-
-    li{
-      /* color: rgb(6, 4, 63); */
-
-
-    }
-
-
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
   </style>
-  <!-- style ends here -->
-
+<!-- the first two we are borrowing from another cloud, we have no control -->
 </head>
-<!-- head ends here -->
 
-<!-- this is where the HTML content begins -->
-<!-- We are starting the body of the content. <div> will divide the page into
-multiple sections, each section has a heading and subheadings: H1, h2, h3,...etc -->
+
 <body>
-  <div id="page-wrap">
-    <!-- <img src="images/pc1.png" width="200" height="auto" id="pic"> -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <h1 style="color:white;font-size:80px;">Andrew Gimb</h1>
-  <p style= "color:white">
-    <!-- this is a way to hyperlink to a different website -->
-    Portfolio: <a href="http://mytextutor.com">andrewgimb.com</a>
-    <!-- this is a way to hyperlink to your email -->
-    <br/>Email: <a href="mailto:ag3764@tc.columbia.edu">ag3764@tc.columbia.edu</a>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
 
-    <div>
-      <h1 style="color:white;font-size:45px;"> Highly Qualified Math Specialist & Tutor
-        <p style="color:white;font-size:20px;"> A passionate educator aiming to instill valor and grit in his students via personally designed & prototyped
-          board game Pants & Cheese. Seeking to iteratively update game mechanics to create a more dynamic environment
-          for users to perceive failure as a measure of success rather than a degredation of self-esteem. Compatible with
-          whole group, small group and one-to-one settings.
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pc1.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc2.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc3.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc4.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc5.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc6.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc7.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc8.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc9.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc10.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc11.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc12.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc13.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc14.jpg" alt="New York" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pc15.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
 
-<!-- br = linebreak -->
-<!-- h2 tab - shortcut -->
-<!-- h2*3 will make three headings  -->
-<!-- ul - unordered list -->
-<div>
-<h1 style="font-size:45px;">Education</h1>
-<h2 style="font-size:25px;">Queens College, GPA: 3.82, Honors: Magna Cum Laude</h2>
-<ul style="font-size:20px;">
-  <li> <strong>MAJOR</strong>: Applied Mathematics
-  <li> <strong>MINORr</strong>: Economics
-  <li> <strong>MINOR</strong>: Business
-</div>
-
-<div>
-<h1 style="font-size:45px;">Core Skills</h1>
-<ul style="font-size:20px;">
-  <li> Understanding and analyzing math concepts
-  <li> Simplifying core math principles for students
-  <li> Gamifying test prep in the form of scavenger hunts to enhance student motivation
-    and engagement
-  <li>  Designing, creating and leading in-school math competitions
-  <li>  Assessing students' abilities
-</div>
-
-<div>
-<h1 style="color:white;font-size:45px;">Experience</h1>
-<h2 style="color:white;font-size:25px;">Family Life Academy Charter School 2017 - Present</h2>
-<ul style="color:white;font-size:20px;">
-  <li> Enhanced student learning by incorporating game mechanics aligned with state standards
-  <li> Worked collaboratively with teachers to find effective ways to improve the fun and flow of
-       test prep
-  <li> Used continuous student feedback to tune game dynamics in accordance to student achievement
-</div>
-
-<div>
-
-  <div>
-  <h1 style="color:white;font-size:45px;">Talents</h1>
-  <h2 style="color:white;font-size:25px;">Family Life Academy Charter School</h2>
-  <ul style="color:white;font-size:20px;">
-    <li> Provided piano and guitar accompaniment for FLACS2 2018 Spring Concert
-    <li> Wrote and produced school theme song "The Best is Yet to Come"
-    <li> Played written piano melodies in class to inspire and motivate studens
-</div>
-
-<div>
-  <h2 style="color:white;font-size:25px;">Teachers College, Columbia University</h2>
-  <ul style="color:white;font-size:20px;">
-    <li> Performed written medley "HEAL" (piano and vocals) for 2016 Winter Musical Serenade Concert
-    <li> Performed written medley "To Mother" (piano and vocals) for 2017 Spring Musical Serenade Concert to honor
-      the tragic death of a close friend's mother 
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
   </div>
 
+
+  <div class="container text-center">
+    <h1> Hi. I'm Mr. Andrew. I like writing music and designing games for my students. </h1>
+
+  </div>
+
+  <!-- <div class="mx-auto" style="width: 200px;">
+    Centered element
+  </div> -->
+
+
+
+<div class="container text-center">
+  <div class="row">
+    <div class="container text-center">
+      <h2> I like to sing funny renditions of songs on the piano. </h2>
+    </div>
+    <!-- <div class="col-sm-4">
+      <p><strong>Billy Joel's Piano Man</strong></p>
+      <video width="320" height="240" controls src="play1.mov" ></video>
+    </div> -->
+
+    <div class="col-sm-6">
+      <p><strong>Gabe Bondoc's Gentlemen Don't</strong></p>
+      <video width="320" height="240" controls src="play2.mov" ></video>
+    </div>
+
+    <div class="col-sm-6">
+      <p><strong>Ed Sheeran's Thinking Out Loud</strong></p>
+      <video width="320" height="240" controls src="play3.mov" ></video>
+    </div>
+  </div>
 </div>
 
+<div class="container text-center">
+  <div class="row">
+    <div class="container text-center">
+      <h2> Sometimes I like improvise. Sometimes I like to be serious. </h2>
+    </div>
+    <div class="col-sm-6">
+      <p><strong>Free</strong></p>
+      <video width="320" height="240" controls src="serious1.mov" ></video>
+    </div>
 
+    <div class="col-sm-6">
+      <p><strong>Born To Be Loved</strong></p>
+      <video width="320" height="240" controls src="serious2.mov" ></video>
+    </div>
 
+  </div>
+</div>
 
+<div class="container text-center">
+  <div class="row">
+    <div class="container text-center">
+      <h2> I'm a Math Teacher that likes to gamify. And I love my students.</h2>
+    </div>
+    <div class="col-sm-4">
+      <p><strong>Pants&Cheese</strong></p>
+      <video width="320" height="240" controls src="teach1.mov" ></video>
+    </div>
 
+    <div class="col-sm-4">
+      <p><strong>Coordinate BattleShip</strong></p>
+      <video width="320" height="240" controls src="teach2.mp4" ></video>
+    </div>
 
-<!-- <div>
-<h1>Skills</h1>
-<h2>Office Skills</h2>
-<p>Adobe Creative Suit. Data Management. Event Organizations.</p>
+    <div class="col-sm-4">
+      <p><strong>Congratulations my Gryphons</strong></p>
+      <video width="320" height="240" controls src="teach3.mov" ></video>
+    </div>
 
-<h2>Computer Skills</h2>
-<p>HTML, CSS, JAVASCRIPT, C#, PYTHON, MySQL, MAX MSP, LOGIC PRO</p>
+  </div>
 </div>
 
 <div>
-<h1>Experience</h1>
-<h2>Super Mario Odyssey Overlord</h2>
-<ul>
-  <li>been to every single kingdrom in Super Mario</li>
-  <li>fought a boss multiple because bored</li>
-  <li>bought every souvenier in every kingdom</li>
-</ul>
+  <h2> I graduated Magna Cum Laude with a bachelor's degree in Applied Mathematics. <br>
+    Hover over the bar below with your mouse to view my potential to be a Mathematician. </h2>
+
+  <div id="box"></div>
+  <p>0------------------------------------------------------------------------------------------------------------------------------------------------------------------------------100%</p>
+
 </div>
 
-  </p>
+<div style="margin-top:120px;">
+  <h2> I love singing, and I love playing piano.I hope you do too.  <br>
+    Hover over the bar below with your mouse to view my potential to be a musician. </h2>
 
-</div> -->
+  <div id="box2"></div>
+  <p>0------------------------------------------------------------------------------------------------------------------------------------------------------------------------------100%</p>
+
+</div>
+
+<div style="margin-top:120px;">
+  <h2> I love writing and creating content.Expression is freedom. <br>
+    Hover over the bar below with your mouse to view my potential to be a writer. </h2>
+
+  <div id="box3"></div>
+  <p>0------------------------------------------------------------------------------------------------------------------------------------------------------------------------------100%</p>
+
+</div>
+
+<div class="container text-center" style="margin-top:50px;">
+
+  <h4> Like a lot of us, I have the potential to do and be many things. I can apply most of my energy to music, and
+  I can apply most of my energy to writing. I chose to apply all of my energy, instead, to educating. It is the
+  only field where all of my talents can fuse. It'd be unjust to use one in another's stead. It is where
+  such fusion can be harnessed, cultivated and then executed for the greater purpose of man. It is where I, Mr. Andrew,
+  will live, breathe and die. </h4>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 
